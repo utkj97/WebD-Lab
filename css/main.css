@@ -67,3 +67,12 @@ li a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.footer {
+width: 100%;
+background: #336699;
+float: left;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
