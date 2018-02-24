@@ -1,80 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Student Information System</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<body style="background-image: url(./images/back.jpg); background-repeat: no-repeat; background-size: cover;">
-	<ul>
-	  <li><a>Student Information System</a></li>
-	  <li style="float: left;"><a class="active" href="./index.html">Home</a></li>
-	  <li style="float: left;"><a href="./register.html">New User</a></li>
-	  <li style="float: left;"><a href="./index.html">Login</a></li>
-	</ul>
+<body>
 
-<marquee><br>
-   <font size ="8"  face="Georgia" color="#CE5722" ><i>Enter details</i></font>
-</marquee>
 	<div class="container">
-		<div class="register">
-			<form>
-			    <h4><i>Personal information:</i></h4>
-
-			    <p style="float: left; width: 60%;">First name : 
+		<form class="registration" id="registration">
+			<h1>Registration</h1>
+			<label for="username">
+				<span>name</span>
+				<input type="text" id="username" minlength="3" required>
+				<ul class="input-requirements">
+					<li>At least 3 characters long</li>
+				</ul>
+			</label>
+			<label for="password">
+				<span>Mobile no.</span>
+				<input type="text" id="password" maxlength="100" minlength="8" required>
+				<ul class="input-requirements">
+					<li>At least 8 characters long</li>
+					<li>Contains only number</li>
+				</ul>
+			</label>
+			<label for="Rollno">
+				<span>Roll no.</span>
+				<input type="text" id="parentname" minlength="3" placeholder = "XX/YY/ZZ" required >
+				<ul class="input-requirements">
+					<li>Should be in format YY/Branch/Rollno.</li>
+				</ul>
+			</label>
+			<label for="parentname">
+				<span>Parents name</span>
+				<input type="text" id="parentname" minlength="3" required>
+				<ul class="input-requirements">
+					<li>At least 3 characters long</li>
+				</ul>
+			</label>
+			<p>Semester :
 			    <select>
-  				<option value="Male">Mr.</option>
- 				<option value="Female">Miss</option>
- 				</select>
- 				<input type="text" name="firstname"></p>
-			    <p style="float: left;">Last name : <input type="text" name="lastname"></p>
-			    <br><br><br><br>
-			    <p style="float: left; width: 60%;">Guardian's name : 
-			    <select>
-  				<option value="Male">Mr.</option>
- 				<option value="Female">Mrs.</option>
- 				</select>
- 				<input type="text" name="guardian"></p>
-			    <p style="float: left;">Date of Birth : <input type="date" name="dob"></p>
-			    <br><br><br><br>
-			    <p style="float: left; width: 60%;">Phone Number: <input type="phone" name="phone"></p>
-			    <p style="float: left;">Blood Group :
-			    <select>
-	  				<option value="1">A+</option>
-	 				<option value="2">B+</option>
-	 				<option value="3">O+</option>
-	 				<option value="4">AB+</option>
-	 				<option value="5">AB-</option>
- 				</select>
- 				</p>
-			    <br><br><br><br>
-			    <p style="text-align: center;">House no. and street : <textarea name="address" rows="3" cols="50"></textarea></p>
-			    <p style="text-align: center;">State : 
-			    <select>
-  				<option value="1">North India</option>
- 				<option value="2">South India</option>
- 				<option value="3">North East</option>
- 				<option value="4">West India</option>
- 				<option value="5">Not Listed</option>
- 				</select>
- 				<!-- <textarea name="address" rows="1" cols="20"></textarea></p> -->
-			    <p style="text-align: center;">PinCode : <textarea name="address" rows="1" cols="10"></textarea></p>
-			    <br><br>
-			</form>
-		</div>
-	</div>
-	<div class="container">
-		<div class="register">
-			<form>
-			    <h4><i>College information:</i></h4>
-			    <p style="float: left; width: 60%;">Programme : <input type="text" name="programme"></p>
-			    <p style="float: left;">Course : <input type="text" name="course"></p>
-			    <br><br><br><br>
-			    <p style="float: left; width: 60%;">Registration Number : <input type="text" name="regno"></p>
-			    <p style="float: left;">Roll Number : <input type="text" name="Roll no."></p>
-			    <br><br><br><br>
-			    <p style="float: left; width: 60%;">Year of Study: <input type="phone" name="year"></p>
-				<p style="float: left;">Semester :
-				<select>
 				    <option value="1">1</option>
 				    <option value="2">2</option>
 				    <option value="3">3</option>
@@ -83,37 +50,35 @@
 				    <option value="6">6</option>
 				    <option value="7">7</option>
 				    <option value="8">8</option>
-				</select></p>
-			    <br><br><br><br>
-			    <p style="text-align: center;">College Address : <textarea name="address" rows="3" cols="50"></textarea></p>
-			    <br><br>
-			</form>
-		</div>
-	</div>
-	<div class="container">
-		<div class="register">
-			<form>
-				<h4><i>Class 12 Information:</i></h4>
-				<p style="float: left;width: 60%;">School Name: <input type="text" name="school"></p>
-				<p style="float: left;">Affiliated to: <input type="text" name="affiliation"></p>
-				<br><br><br><br>
-				<p style="float: left;width: 60%;">Percentage: <input type="text" name="marks12"></p>
-				<p style="float: left;">Year of Passing: <input type="text" name="pass12"></p>
-				<br><br><br><br>
-			</form>
-			<form>
-				<h4><i>Class 10 Information:</i></h4>
-				<p style="float: left;width: 60%;">School Name: <input type="text" name="school"></p>
-				<p style="float: left;">Affiliated to: <input type="text" name="affiliation"></p>
-				<br><br><br><br>
-				<p style="float: left;width: 60%;">Percentage: <input type="text" name="marks10"></p>
-				<p style="float: left;">Year of Passing: <input type="text" name="pass10"></p>
-				<br><br><br><br>
-			</form>
-		</div>
-		<input type="submit" name="submit" style="margin-left: 40%; margin-top: 50px;" class="button">
-		<input type="reset" name="reset" class="button">
+				</select>
+			</p>
+			<label for="Address">
+				<span>Address</span>
+				<input type="text" id="parentname" minlength="3" required>
+				<ul class="input-requirements">
+					<li>At least 3 characters long</li>
+				</ul>
+			</label>
+			<label for="city">
+				<span>City</span>
+				<input type="text" id="parentname" minlength="3" required>
+				<ul class="input-requirements">
+					<li>At least 3 characters long</li>
+				</ul>
+			</label>
+			<label for="State">
+				<span>State</span>
+				<input type="text" id="parentname" minlength="3" required>
+				<ul class="input-requirements">
+					<li>At least 3 characters long</li>
+				</ul>
+			</label>
+			<h3><u>Other Information</u></h3>
+			<br>
+			<input type="submit" style="margin-left: 35%;">
+		</form>	
 	</div>
 
+    <script src="js/form_validation.js"></script>
 </body>
 </html>
