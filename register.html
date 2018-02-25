@@ -8,75 +8,240 @@
 </head>
 <body>
 
-	<div class="container">
-		<form class="registration" id="registration">
-			<h1>Registration</h1>
-			<label for="username">
-				<span>name</span>
-				<input type="text" id="username" minlength="3" required>
-				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-				</ul>
-			</label>
-			<label for="password">
-				<span>Mobile no.</span>
-				<input type="text" id="password" maxlength="100" minlength="8" required>
-				<ul class="input-requirements">
-					<li>At least 8 characters long</li>
-					<li>Contains only number</li>
-				</ul>
-			</label>
-			<label for="Rollno">
-				<span>Roll no.</span>
-				<input type="text" id="parentname" minlength="3" placeholder = "XX/YY/ZZ" required >
-				<ul class="input-requirements">
-					<li>Should be in format YY/Branch/Rollno.</li>
-				</ul>
-			</label>
-			<label for="parentname">
-				<span>Parents name</span>
-				<input type="text" id="parentname" minlength="3" required>
-				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-				</ul>
-			</label>
-			<p>Semester :
-			    <select>
-				    <option value="1">1</option>
-				    <option value="2">2</option>
-				    <option value="3">3</option>
-				    <option value="4">4</option> 
-				    <option value="5">5</option>
-				    <option value="6">6</option>
-				    <option value="7">7</option>
-				    <option value="8">8</option>
-				</select>
-			</p>
-			<label for="Address">
-				<span>Address</span>
-				<input type="text" id="parentname" minlength="3" required>
-				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-				</ul>
-			</label>
-			<label for="city">
-				<span>City</span>
-				<input type="text" id="parentname" minlength="3" required>
-				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-				</ul>
-			</label>
-			<label for="State">
-				<span>State</span>
-				<input type="text" id="parentname" minlength="3" required>
-				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-				</ul>
-			</label>
-			<h3><u>Other Information</u></h3>
-			<br>
-			<input type="submit" style="margin-left: 35%;">
-		</form>	
+	<div class="container2">
+		<h1>Registration Form</h1>
+		<form id="registration">
+			<div class="registration" style="float: left;">
+				<h3>Personal Details</h3>
+				<label for="username">
+					<span>Username</span>
+					<input type="text" id="username" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must only contain letters and numbers(no special characters)</li>
+					</ul>
+				</label>
+				<label for="password">
+					<span>Password</span>
+					<input type="password" id="password" maxlength="100" minlength="8" required>
+					<ul class="input-requirements">
+						<li>At least 8 characters long (and less than 100 characters)</li>
+						<li>Contains at least 1 number</li>
+						<li>Contains at least 1 lowercase letter</li>
+						<li>Contains at least 1 uppercase letter</li>
+						<li>Contains a special character (e.g. @ !)</li>
+					</ul>
+				</label>
+				<label for="name">
+					<span>Your Name</span>
+					<input type="text" id="name" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only letters</li>
+					</ul>
+				</label>
+				<label for="father">
+					<span>Father's Name</span>
+					<input type="text" id="father" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only letters</li>
+					</ul>
+				</label>
+				<label for="mother">
+					<span>Mother's Name</span>
+					<input type="text" id="mother" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only letters</li>
+					</ul>
+				</label>
+				<label for="dob">
+					<span>Date of Birth</span>
+					<input type="date" id="dob" minlength="3" placeholder = "XX/YY/ZZ" required >
+					<ul class="input-requirements">
+						<li>Should be in format MM/DD/YYYY</li>
+					</ul>
+				</label>
+				<label for="gender">
+					<span>Gender</span>
+					<input type="radio" name="gender" value="male" checked> Male
+					<input type="radio" name="gender" value="female"> Female<br>
+				</label><br>
+				<p>Caste:
+					<select>
+						<option value="op">OP</option>
+						<option value="obc">OBC</option>
+						<option value="sc">SC</option>
+						<option value="st">ST</option>
+					</select>
+				</p><br>
+				<label for="email">
+					<span>Email id</span>
+					<input type="text" id="email" minlength="3" required>
+					<ul class="input-requirements">
+						<li>Must be a valid email id</li>
+					</ul>
+				</label>
+				<label for="contact">
+					<span>Contact Number</span>
+					<input type="text" name="contact" required>
+					<ul class="input-requirements">
+						<li>Only numbers allowed</li>
+						<li>Enter a valid number</li>
+					</ul>
+				</label>
+				<label for="address">
+					<span>Address</span>
+					<input type="text" id="address" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+					</ul>
+				</label>
+				<label for="city">
+					<span>City</span>
+					<input type="text" id="parentname" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+					</ul>
+				</label>
+				<label for="state">
+					<span>State</span>
+					<input type="text" id="parentname" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+					</ul>
+				</label>
+				<label for="pin">
+					<span>PIN Code</span>
+					<input type="text" id="pin" minlength="3" required>
+					<ul class="input-requirements">
+						<li>Only numbers allowed</li>
+					</ul>
+				</label>
+				<label for="country">
+					<span>Country</span>
+					<input type="text" id="country" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+					</ul>
+				</label>
+				<label for="nation">
+					<span>Nationality</span>
+					<input type="text" id="nation" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+					</ul>
+				</label>
+			</div>
+			<div class="registration" style="float: right;">
+				<h3>Educational Details</h3>
+				<label for="registration">
+					<span>Registration Number</span>
+					<input type="text" name="registration" minlength="8" required>
+				</label><br><br>
+				<label for="dept">
+					<span>Department of</span>
+					<input type="text" id="dept" minlength="3" required>
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only alphabets</li>
+					</ul>
+				</label>
+				<label for="Rollno">
+					<span>Roll Number</span>
+					<input type="text" id="roll" minlength="3" placeholder = "XX/YY/ZZ" required >
+					<ul class="input-requirements">
+						<li>Should be in format YY/Branch/Rollno.</li>
+					</ul>
+				</label>
+				<label for="session">
+					<span>Session</span>
+					<input type="text" id="session" minlength="3" placeholder = "YYYY-YYYY" required >
+					<ul class="input-requirements">
+						<li>Year of joining college to year of expected passout</li>
+					</ul>
+				</label>
+				<p>Semester :
+				    <select>
+					    <option value="1">1</option>
+					    <option value="2">2</option>
+					    <option value="3">3</option>
+					    <option value="4">4</option> 
+					    <option value="5">5</option>
+					    <option value="6">6</option>
+					    <option value="7">7</option>
+					    <option value="8">8</option>
+					</select>
+				</p>
+				<hr>
+				<h3>Class 12 Details</h3>
+				<label for="school12">
+					<span>School Name</span>
+					<input type="text" id="school12" minlength="3" required >
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only alphabets</li>
+					</ul>
+				</label>
+				<label for="affiliated12">
+					<span>Affiliated to</span>
+					<input type="text" id="affiliated12" minlength="3" required >
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only alphabets</li>
+					</ul>
+				</label>
+				<label for="percent12">
+					<span>Percentage</span>
+					<input type="text" id="percent12" minlength="3" required >
+					<ul class="input-requirements">
+						<li>Calculated w.r.t. 100%</li>
+					</ul>
+				</label>
+				<label for="pass12">
+					<span>Passing Year</span>
+					<input type="number" id="pass10" min="1990" max="2100" required >
+				</label><br><br><hr>
+				<h3>Class 10 Details</h3>
+				<label for="school10">
+					<span>School Name</span>
+					<input type="text" id="school10" minlength="3" required >
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only alphabets</li>
+					</ul>
+				</label>
+				<label for="affiliated10">
+					<span>Affiliated to</span>
+					<input type="text" id="affiliated10" minlength="3" required >
+					<ul class="input-requirements">
+						<li>At least 3 characters long</li>
+						<li>Must contain only alphabets</li>
+					</ul>
+				</label>
+				<label for="percent10">
+					<span>Percentage</span>
+					<input type="text" id="percent10" minlength="3" required >
+					<ul class="input-requirements">
+						<li>Calculated w.r.t. 100%</li>
+					</ul>
+				</label>
+				<label for="pass10">
+					<span>Passing Year</span>
+					<input type="number" id="pass10" min="1990" max="2100" required >
+				</label><br><br><hr>
+				<h3>Medical Details</h3>
+				<label for="medical">
+					<span>Medical History(if any)</span>
+					<textarea  id="medical" rows="3" cols="25"></textarea>
+					<ul class="input-requirements">
+						<li>Optional</li>
+					</ul>
+				</label>
+			</div>
+			<input type="submit" class="btn">
+		</form>
 	</div>
 
     <script src="js/form_validation.js"></script>
