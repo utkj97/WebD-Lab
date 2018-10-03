@@ -21,9 +21,7 @@ CustomValidation.prototype = {
 			if (isInvalid) {
 				this.addInvalidity(this.validityChecks[i].invalidityMessage);
 			}
-
 			var requirementElement = this.validityChecks[i].element;
-
 			if (requirementElement) {
 				if (isInvalid) {
 					requirementElement.classList.add('invalid');
@@ -51,7 +49,6 @@ CustomValidation.prototype = {
 	registerListener: function() {
 
 		var CustomValidation = this;
-
 		this.inputNode.addEventListener('keyup', function() {
 			CustomValidation.checkInput();
 		});
