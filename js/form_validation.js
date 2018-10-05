@@ -3,7 +3,6 @@ function CustomValidation(input) {
 	this.validityChecks = [];
 
 	this.inputNode = input;
-
 	this.registerListener();
 }
 
